@@ -18,14 +18,14 @@ var tableModule = (function(window, $) {
             data: "incidntnum",
             title: "Incident#",
             name: "incidntnum",
+            visible: false
         }, {
             data: "date",
             title: "Date",
             name: "date",
             render: function(data, type, row, meta) {
                 return moment(data).format('l')
-            },
-            visible: false
+            }
         }, {
             data: "time",
             title: "Time",
@@ -173,7 +173,7 @@ var tableModule = (function(window, $) {
     function _loadDataToTable(incidentJson) {
         _table.clear();
 
-      //  incidentJson = _csCategoryCheck(incidentJson);
+        incidentJson = _csCategoryCheck(incidentJson);
 
 
         _table.rows.add(incidentJson);
