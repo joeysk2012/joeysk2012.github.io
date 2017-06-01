@@ -10,8 +10,8 @@ var mapModule = (function(window,$) {
         properties: { 'marker-size': 'large' }
     };
 /*the following objects sets the custom marker icons for each CSCategory*/
-    var iconArray= ["crime", "assault","arson","burglary","dating","domestic",
-    "drug",'hate',"liquor","motor", "robbery", "sex", "stalking","weapon"];
+    var iconArray= ["crimeIcon", "assaultIcon","arsonIcon","burglaryIcon","datingIcon","domesticIcon",
+    "drugsIcon",'hateIcon',"liquorIcon","motorIcon", "robberyIcon", "sexIcon", "stalkingIcon","weaponsIcon"];
 
     for(i=0; i<iconArray.length; i++){
       iconArray[i]= L.icon(
