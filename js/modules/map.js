@@ -13,6 +13,7 @@ var mapModule = (function(window,$) {
     var iconArray= ["crimeIcon", "assaultIcon","arsonIcon","burglaryIcon","datingIcon","domesticIcon",
     "drugsIcon",'hateIcon',"liquorIcon","motorIcon", "robberyIcon", "sexIcon", "stalkingIcon","weaponsIcon"];
 
+    console.log(iconArray.length)
     for(i=0; i<iconArray.length; i++){
       iconArray[i]= L.icon(
           {
@@ -190,7 +191,7 @@ var mapModule = (function(window,$) {
           case(layer.feature.properties.cscategory==="HATE CRIMES"):
               layer.setIcon(iconArray[7])
               break;
-          case(layer.feature.properties.cscategory==="LIQUOR LAW"):
+          case(layer.feature.properties.cscategory==="LIQUOR LAW VIOLATIONS"):
               layer.setIcon(iconArray[8]);
               break;
           case(layer.feature.properties.cscategory==="MOTOR VEHICLE THEFT"):
@@ -205,7 +206,7 @@ var mapModule = (function(window,$) {
           case(layer.feature.properties.cscategory==="STALKING"):
               layer.setIcon(iconArray[12]);
               break;
-          case(layer.feature.properties.cscategory==="WEAPONS POSSESION"):
+          case(layer.feature.properties.cscategory==="WEAPONS POSSESSION"):
               layer.setIcon(iconArray[13]);
               break;
 
