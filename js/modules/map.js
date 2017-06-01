@@ -13,14 +13,13 @@ var mapModule = (function(window,$) {
     var iconArray= ["crimeIcon", "assaultIcon","arsonIcon","burglaryIcon","datingIcon","domesticIcon",
     "drugsIcon",'hateIcon',"liquorIcon","motorIcon", "robberyIcon", "sexIcon", "stalkingIcon","weaponsIcon"];
 
-    console.log(iconArray.length)
     for(i=0; i<iconArray.length; i++){
       iconArray[i]= L.icon(
           {
               iconUrl: './gfx/' + iconArray[i] + '.svg',
               iconSize: [40,40],
-              iconAnchor: [12.31],
-              popupAnchor: [-3,-22]
+              iconAnchor: [20,40],
+              popupAnchor: [0,-35]
           }
         )
       }
